@@ -1,5 +1,5 @@
 
-## Setup
+## WebRTC Documintation
 
 
 ## Setup for Backend
@@ -96,7 +96,7 @@ Handling Remote Media Tracks with peerConnection.ontrack
 
 ```
 
-##8.  Initiate Offer 
+## 8.  Initiate Offer 
 ```javascript
  var offer = await peerConnection.createOffer()
 ```
