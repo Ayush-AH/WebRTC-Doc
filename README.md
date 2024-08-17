@@ -1,5 +1,5 @@
 
-## WebRTC Documintation 📃
+## WebRTC Documentation 📃
 
 
 ## Setup for Backend
