@@ -112,15 +112,12 @@ socket.on("signalingMessage", async function (message) {
     let { type, candidate, offer, answer } = message
 
     if (type === "offer") {
-        console.log("offer aya");
-        await createPeerConnection()
         await peerConnection.setRemoteDescription(offer)
         let answer = await peerConnection.createAnswer()
         await peerConnection.setLocalDescription(answer)
         socket.emit("signalingMessage", { type: "answer", answer })
     }
     if (type === "answer") {
-        console.log("answer aya");
         if (!peerConnection.currentRemoteDescription) {
             peerConnection.setRemoteDescription(answer)
         }
